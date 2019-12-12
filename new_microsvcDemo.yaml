@@ -249,14 +249,14 @@ metadata:
   name: frontend-external
 spec:
 #change to NodePort for no istio
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: frontend
   ports:
   - name: http
     port: 80
     targetPort: 8080
-#   NodePort: 30001 
+    NodePort: 30001 
 ---
 apiVersion: apps/v1
 kind: Deployment
