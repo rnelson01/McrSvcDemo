@@ -256,7 +256,7 @@ spec:
   - name: http
     port: 80
     targetPort: 8080
-    NodePort: 30001 
+    #NodePort: 30001 
 ---
 apiVersion: apps/v1
 kind: Deployment
