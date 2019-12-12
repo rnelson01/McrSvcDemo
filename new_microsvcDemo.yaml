@@ -249,7 +249,7 @@ metadata:
   name: frontend-external
 spec:
 #change to NodePort for no istio
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: frontend
   ports:
